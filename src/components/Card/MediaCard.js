@@ -1,8 +1,5 @@
-import * as React from 'react';
-import Item from './Item';
-
-
-
+import * as React from "react";
+import Item from "./Item";
 
 // const products = [
 //    {
@@ -63,15 +60,10 @@ import Item from './Item';
 //    }
 // ];
 
-export default function MediaCard(){
-const localProducts = JSON.parse(localStorage.getItem("products"))||[]
+export default function MediaCard() {
+  const localProducts = JSON.parse(localStorage.getItem("products")) || [];
 
-   return(
-      localProducts.map((product)=>(
-         <Item product={product} key={product.id}/>
-      ))
-   )
+  return localProducts.map((product) => (
+    <Item product={product} key={product.id} />
+  ));
 }
-
-
-
