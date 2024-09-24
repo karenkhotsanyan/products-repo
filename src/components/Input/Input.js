@@ -29,15 +29,15 @@ export default function Input() {
   }, [products]);
 
   return (
-    <Box display="flex" justifyContent="space-around">
+    <Box display="flex" justifyContent="space-around" alignItems="center">
       <Box
         component="form"
         sx={{
-          "& > :not(style)": { Width: "100%" },
           display: "flex",
           flexDirection: "column",
           maxHeight: "100vh",
           gap: "15px",
+          minWidth: "25%",
         }}
         noValidate
         autoComplete="off"

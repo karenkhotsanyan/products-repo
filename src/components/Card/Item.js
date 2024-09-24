@@ -9,7 +9,7 @@ export default function Item({ product }) {
   return (
     <Card sx={{ maxWidth: 345, margin: "10px", display: "inline-block" }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ width: "100%", height: 200, objectFit: "contain" }}
         image={product.imageUrl}
         title="green iguana"
       />
